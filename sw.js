@@ -1,5 +1,5 @@
 // Bump VERSION when you change index.html so phones pick up the new build.
-const VERSION = 'recomp-v1';
+const VERSION = 'recomp-v3';
 const ASSETS = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
